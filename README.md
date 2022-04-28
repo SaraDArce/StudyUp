@@ -63,6 +63,7 @@ As part of the project, create the following models. Each model should be repres
 - **number_of_attendees:** integer
 
 **Stretch: Users**
+
 You should push yourself to complete these routes, but they are not required to do the pairing activity
 
 - Create a user
