@@ -1,0 +1,22 @@
+{
+  "name": "studyup",
+  "version": "1.0.0",
+  "description": "## Study Groups Meetup Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SaraDArce/StudyUp.git"
+  },
+  "author": "Sara D'Arce",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SaraDArce/StudyUp/issues"
+  },
+  "homepage": "https://github.com/SaraDArce/StudyUp#readme",
+  "dependencies": {
+    "express": "^4.18.0"
+  }
+}
