@@ -72,6 +72,7 @@ You should push yourself to complete these routes, but they are not required to 
 - Delete a user
 
 **Models**
+
 *Study Groups*
 
 - name : string (unique, required)
