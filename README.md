@@ -42,7 +42,8 @@ Instead of making views, you should build the following routes:
 | Events | GET |/events/{eid} | Returns the details of an event with an id of{eid}|
 | Events | PUT |/events/{eid} | Update details of the event with an id of{eid}|
 
-**_Models_**
+**Models**
+
 As part of the project, create the following models. Each model should be represented by a table in your database. Required database fields and a description of those fields are described below.
 
 _Study Groups_
