@@ -46,14 +46,14 @@ Instead of making views, you should build the following routes:
 
 As part of the project, create the following models. Each model should be represented by a table in your database. Required database fields and a description of those fields are described below.
 
-_Study Groups_
+*Study Groups*
 
 - **name:** string (unique, required)
 - **main_focus:** string (e.g "JavaScript", "knitting", "photography", "machine learning", etc.)
 - **date_formed:** datetime
 - **contact_email:** string
 
-_Events_
+*Events*
 
 - **name:** string (required)
 - **virtual_meeting_link:** a url (i.e. like a zoom link, does not have to be a real link)
@@ -62,7 +62,7 @@ _Events_
 - **end_time:** datetime
 - **number_of_attendees:** integer
 
-**_Stretch: Users_**
+**Stretch: Users**
 You should push yourself to complete these routes, but they are not required to do the pairing activity
 
 - Create a user
@@ -71,14 +71,14 @@ You should push yourself to complete these routes, but they are not required to 
 - Update a user
 - Delete a user
 
-**_Models_**
-_Study Groups_
+**Models**
+*Study Groups*
 
 - name : string (unique, required)
 - main_focus : string ( JavaScript, knitting, photography, machine learning...) - formed : Date
 - contact : string
 
-_Events_
+*Events*
 
 - name : string (required)
 - virtual_meeting_link: a url (like a zoom link, does not have to be a real link)
@@ -88,7 +88,7 @@ _Events_
 - number_of_attendees: integer
 - cancelled: boolean (default false)
 
-_Users_
+*Users*
 
 - username: string (required)
 - first_name: string
@@ -116,7 +116,7 @@ Postgres will accept the following two formats:
 Where 14 represents 2pm, as part of a 24 clock.
 When creating items with time, just use a string with the correct formatting. Do not worry about creating logic to deal with multiple types of inputs/correcting wrong inputs.
 
-**_Super Stretch_**
+**Super Stretch**
 
 - Add RESTful routes and relationships so users can attend many events and events can have many attendees (users)
 - Add the ability to see the names of the people attending an event
