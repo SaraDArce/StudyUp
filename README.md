@@ -4,7 +4,8 @@
 
 ### Study Buddies
 
-Back-end Take Home Coding Challenge
+*Back-end Take Home Coding Challenge*
+
 This is a take home coding challenge where you will build a RESTful API using Express and Postgres.
 Typically, coding challenges are usually estimated to be 1 day's worth of work for your skill level and one should be wary of challenges that expect more time from you than that, especially the ones that require a week or more of work.
 However, because this is a practice coding challenge, where you are still in a supportive learning environment, you have an opportunity to really sharpen your skills and make sure you can approach future projects with the knowledge and confidence required to do well. Therefore this app, for many of you, is likely going to take more than 7 hours of work.
