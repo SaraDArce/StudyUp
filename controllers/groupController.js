@@ -6,7 +6,10 @@ const {
   createGroup,
   updateGroup,
 } = require("../queries/groups.js");
-const eventsContoller = require("./eventController.js");
+
+const eventsController = require("./eventController.js");
+
+groups.use("/:study_group_id/events", eventsController);
 
 // INDEX
 
