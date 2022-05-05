@@ -1,6 +1,11 @@
 const express = require("express");
 const groups = express.Router();
-const { getAllGroups, getGroup, createGroup, updateGroup } = require("../queries/groups.js");
+const {
+  getAllGroups,
+  getGroup,
+  createGroup,
+  updateGroup,
+} = require("../queries/groups.js");
 const eventsContoller = require("./eventController.js");
 
 // INDEX
@@ -32,6 +37,17 @@ groups.post("/", async (req, res) => {
     res.json(group);
   } catch (error) {
     res.status(400).json({ error: error });
+  }
+});
+
+groups.put("/:id", async (req, res) => {
+  const { id } = req.params;
+  const { body } = req;
+  const updatedGroup = await updateGroup(id, body);
+  if (updatedGroup.id) {
+    res.status(200).json(updatedGroup);
+  } else {
+    res.status(404).json({ error: "Group not found" });
   }
 });
 
