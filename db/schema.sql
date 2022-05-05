@@ -18,8 +18,8 @@ CREATE TABLE events (
     id SERIAL PRIMARY KEY,
     name TEXT,
     virtual_meeting_link TEXT, 
-    study_group_id INTEGER REFERENCES groups (id),
     start_time TEXT, 
     end_time TEXT,
-    number_of_attendees NUMERIC
+    number_of_attendees NUMERIC,
+    study_group_id INTEGER REFERENCES groups (id)
 );
