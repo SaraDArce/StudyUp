@@ -7,6 +7,7 @@ CREATE TABLE groups (
     id SERIAL PRIMARY KEY, 
     name TEXT,
     main_focus TEXT NOT NULL,
+    is_active BOOLEAN,
     date_formed TEXT, 
     contact_email TEXT
 );

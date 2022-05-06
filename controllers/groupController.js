@@ -5,6 +5,9 @@ const {
   getGroup,
   createGroup,
   updateGroup,
+  showActiveGroups,
+  showInactiveGroups,
+  showAllActOrInactGroups
 } = require("../queries/groups.js");
 
 const eventsController = require("./eventController.js");
@@ -53,5 +56,7 @@ groups.put("/:id", async (req, res) => {
     res.status(404).json({ error: "Group not found" });
   }
 });
+
+
 
 module.exports = groups;

@@ -44,9 +44,45 @@ const updateGroup = async (id, group) => {
   }
 };
 
+const showActiveGroups = async (group) => {
+  try {
+    const showActiveGroups = await db.any(
+      "SELECT * FROM groups WHERE is_active=TRUE"
+    );
+    return showActiveGroups;
+  } catch (err) {
+    return err;
+  }
+};
+
+const showInactiveGroups = async (group) => {
+  try {
+    const showInactiveGroups = await db.any(
+      "SELECT * FROM groups WHERE is_active=FALSE"
+    );
+    return showInactiveGroups;
+  } catch (err) {
+    return err;
+  }
+};
+
+const showAllActOrInactGroups = async (group) => {
+  try {
+    const showAllActOrInactGroup = await db.any(
+      "SELECT * FROM groups WHERE is_active"
+    );
+    return showAllActOrInactGroups;
+  } catch (err) {
+    return err;
+  }
+};
+
 module.exports = {
   getAllGroups,
   createGroup,
   getGroup,
   updateGroup,
+  showActiveGroups,
+  showInactiveGroups,
+  showAllActOrInactGroups
 };
